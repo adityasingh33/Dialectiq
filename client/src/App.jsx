@@ -15,7 +15,7 @@ const App = () => {
         <Router>
           <Routes>
 
-            <Route path='/' element={
+            <Route path='/land' element={
               <Landing/>
             }/>
             
