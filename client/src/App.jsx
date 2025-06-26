@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Home from './pages/Home'
-import Login from './pages/login'
-import GrpDebate from './pages/GrpDebate'
+import Login from './pages/Login'
+import GrpDebate from './pages/GrpDebate' 
 import Register from './pages/register'
-import Landing from './pages/landing'
-import Aibotdebate from './pages/aibotdebate'
+import Landing from './pages/Landing'
+import Aibotdebate from './pages/AiBotDebate'
 import PvtDebate from './pages/PvtDebate'
 
 

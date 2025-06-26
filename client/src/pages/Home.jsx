@@ -23,15 +23,7 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // const handleSignUp = () => {
-  //   // Replace with your navigation logic
-  //   console.log('Navigate to /register');
-  // };
 
-  // const handleLogin = () => {
-  //   // Replace with your navigation logic
-  //   console.log('Navigate to /login');
-  // };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-700 via-red-500 to-pink-600 relative overflow-hidden">
