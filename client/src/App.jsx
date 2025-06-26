@@ -5,7 +5,7 @@ import Login from './pages/Login'
 import GrpDebate from './pages/GrpDebate' 
 import Register from './pages/register'
 import Landing from './pages/Landing'
-import Aibotdebate from './pages/AiBotDebate'
+import AiBotdebate from './pages/AiBotDebate'
 import PvtDebate from './pages/PvtDebate'
 
 
@@ -36,7 +36,7 @@ const App = () => {
             }/>
 
             <Route path='/debateai' element={
-              <Aibotdebate/>
+              <AiBotdebate/>
             }/>
 
             <Route path='/pvtdebate' element={

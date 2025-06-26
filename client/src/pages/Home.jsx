@@ -75,13 +75,14 @@ const Home = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           {[
-            { icon: "🤖", title: "Smart Debates", desc: "AI-powered discussion insights" },
-            { icon: "🧐", title: "Debate Privately", desc: "Structured argument frameworks" },
-            { icon: "🌐", title: "Global Community", desc: "Connect with minds worldwide" }
+            { icon: "🤖", title: "Smart Debates", desc: "AI-powered discussion insights", onClick: () => navi('/debateai') },
+            { icon: "🧐", title: "Debate Privately", desc: "Structured argument frameworks" ,onClick : () => navi('/pvtdebate')},
+            { icon: "🌐", title: "Global Community", desc: "Connect with minds worldwide",onClick: () =>navi('/grpdebate') }
           ].map((feature, index) => (
             <div
               key={index}
               className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-white/20 cursor-pointer"
+              onClick={feature.onClick}
             >
               <div className="text-4xl mb-3 animate-bounce" style={{ animationDelay: `${index * 500}ms` }}>
                 {feature.icon}
