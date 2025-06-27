@@ -7,6 +7,7 @@ import Register from './pages/register'
 import Landing from './pages/Landing'
 import AiBotdebate from './pages/AiBotDebate'
 import PvtDebate from './pages/PvtDebate'
+import Profile from './pages/profile'
 
 
 const App = () => {
@@ -29,6 +30,10 @@ const App = () => {
 
             <Route path='/home' element={
               <Home/>
+            }/>
+
+            <Route path='/profile' element={
+              <Profile/>
             }/>
 
             <Route path='/grpdebate' element={

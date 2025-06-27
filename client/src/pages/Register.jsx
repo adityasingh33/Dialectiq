@@ -61,6 +61,26 @@ export default function Register() {
             </div>
           )}
 
+          {isRegister && (
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Gender
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  {/* <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg> */}
+                </div>
+                <input
+                  type="text"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none transition-all duration-200"
+                  placeholder="Type your gender"
+                />
+              </div>
+            </div>
+          )}
+
           {/* Password Field */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -113,26 +133,7 @@ export default function Register() {
 
       
 
-        {/* Toggle between Login and Sign Up */}
-        <div className="text-center">
-          <button
-            type="button"
-            onClick = {handleClick}
-            className="text-gray-600 hover:text-pink-500 transition-colors duration-200"
-          >
-            {isRegister ? (
-              <>
-                Already have an account?{' '}
-                <span className="font-semibold text-pink-500">Login</span>
-              </>
-            ) : (
-              <>
-                Don't have an account?{' '}
-                <span className="font-semibold text-pink-500">Register</span>
-              </>
-            )}
-          </button>
-        </div>
+  
       </div>
     </div>
   );
