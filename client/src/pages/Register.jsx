@@ -34,7 +34,7 @@ export default function Register() {
     register(formData);
     
     // Navigate to profile after successful registration
-    navigate('/home');
+    navigate('/profile');
   };
 
   const handleChange = (e) => {

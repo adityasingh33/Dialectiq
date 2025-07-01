@@ -94,23 +94,7 @@ const Home = () => {
         </div>
 
       
-        {/* Stats Section */}
-        <div className={`mt-16 grid grid-cols-3 gap-8 text-center transform transition-all duration-1000 delay-700 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          {[
-            { number: "10K+", label: "Active Debaters" },
-            { number: "50K+", label: "Debates Hosted" },
-            { number: "100+", label: "Countries" }
-          ].map((stat, index) => (
-            <div key={index} className="text-white">
-              <div className="text-2xl sm:text-3xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
-                {stat.number}
-              </div>
-              <div className="text-sm text-gray-300">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+
       </div>
 
       {/* Scroll Indicator */}
